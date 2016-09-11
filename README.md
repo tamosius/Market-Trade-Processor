@@ -55,3 +55,5 @@ In order to use Spring Security I must add the necessary dependencies in the **p
   
   And update project with Maven.
 
+### Jenkins
+Used Jenkins, the continuous integration server. The advantage of this that you always knowing if all tests work and getting fast feedback when you pushing the new code into github repository.
