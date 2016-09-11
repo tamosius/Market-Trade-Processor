@@ -23,9 +23,11 @@ The request is intercepted by the DispatcherServlet which looks for Handler Mapp
 - WebSockets could be implemented to notify each client that the datasource has been changed, each client will then make a new call to the RESTful webservice to retrieve the latest model. (WebSockets are not implemented).
 
 ### Message Consumption
-The initial message will be consumed via URL: **http://{host}:{port}/Market_Trade_Processor**. Trade message will be POST’d to this endpoint and will take the JSON form of:
+The initial message will be consumed via Web Service at URL: **http://{host}:{port}/Market_Trade_Processor/rest/getTradeInfo**. Trade message will be POST’d to this endpoint and will take the JSON form of:
 
 **{"userId": "134256", "currencyFrom": "EUR", "currencyTo": "GBP", "amountSell": 1000, "amountBuy": 747.10, "rate": 0.7471, "timePlaced" : "14-JAN-15 10:27:44", "originatingCountry" : "FR"}.**
+
+To load this JSON object in a front end view, type: **http://{host}:{port}/Market_Trade_Processor/**.
 
 ### Message Processor
 Process messages received via the message consumption endpoint.
