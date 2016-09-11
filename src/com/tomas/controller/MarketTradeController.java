@@ -13,4 +13,10 @@ public class MarketTradeController {
 		
 		return new ModelAndView("index");
 	}
+	
+	/*
+	 * When you use the @ResponseBody annotation on a method, 
+	 * Spring converts the return value and writes it to the HTTP response automatically. 
+	 * Each method in the Controller class must be annotated with @ResponseBody.
+	 */
 }
