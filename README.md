@@ -42,7 +42,7 @@ Developed with JSP, Jquery and fetched data via Ajax calls. New messages can be 
 ### Security
 In order to use Spring Security I must add the necessary dependencies in the **pom.xml** file: 
   
-  **<dependency>**
+  **\<dependency\>**
     **<groupId>org.springframework.security</groupId>**
     **<artifactId>spring-security-web</artifactId>**
     **<version>3.2.10.CI-SNAPSHOT</version>**
