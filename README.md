@@ -52,4 +52,6 @@ In order to use Spring Security I must add the necessary dependencies in the **p
   **\<artifactId\>spring-security-config\</artifactId\>**  
   **\<version\>3.2.10.CI-SNAPSHOT\</version\>**  
   **\</dependency\>**  
+  
+  And update project with Maven.
 
