@@ -1,0 +1,82 @@
+.container-fluid{
+	
+	border: 1px #666666 solid;
+	box-shadow: 0px 0px 8px #4d4d4d;
+}
+
+.row {
+	
+	margin: 0px 0px;
+}
+
+.markets_body_rows .row{
+	
+	border-bottom: 1px #666666 solid;
+}
+
+.markets_body_rows .row:nth-child(even){
+	
+    background: #E2E2E6;
+}
+
+.markets_body_rows .row:hover{
+	
+	color: white;
+    background: #B2BFD2;
+}
+
+/*-- THE HEIGHT OF THE BLOCK AND MAKE IT SCROLL WHEN REACHES MAX HEIGHT --*/
+.markets_body_rows{
+	
+	height: calc(100% - 100px);
+	overflow-y: auto;
+}
+
+/*-- HEADER ROW OF 'Markets' TABLE (RIGHT SIDE) --------------------------*/
+#header_row{
+	
+	line-height: 27px;
+	height: 27px;
+	color: #ffffff;
+	margin: 0px 0px;
+	
+	background: -webkit-linear-gradient(top, #365899 0%, rgba(00, 88, 98, 0.7) 50%, #365899 100%);
+    background: linear-gradient(to bottom, #365899 0%, rgba(00, 88, 98, 0.7) 50%, #365899 100%);
+	text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+	
+}
+
+.btn-group label{
+	
+	margin: 7px 5px;
+}
+
+.col-sm-5{
+	
+	//border-right: 1px #666666 solid;
+}
+
+.col-sm-7{
+	
+	height: 271px;
+}
+
+.btn-group button{
+	border-radius: 0px;
+}
+
+
+.row div{
+	
+	//border: 1px green solid;
+}
+ h3{
+	
+	text-align: center;
+	padding: 5px 0px;
+	color: #ffffff;
+	
+	background: -webkit-linear-gradient(top, #365899 0%, rgba(00, 88, 98, 0.7) 50%, #365899 100%);
+    background: linear-gradient(to bottom, #365899 0%, rgba(00, 88, 98, 0.7) 50%, #365899 100%);
+	text-shadow: -1px 0 #666666, 0 1px #666666, 1px 0 #666666, 0 -1px #666666;
+}
