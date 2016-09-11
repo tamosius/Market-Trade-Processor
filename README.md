@@ -37,4 +37,19 @@ Implementaion are under the package **com.tomas.dao.imlementation**.
 - ProcessDataImplementation.java -> processes the messages and stores it in the ArrayList.
 
 ### Message Frontend
-Developed with JSP, Jquery and fetched data via Ajax calls.
+Developed with JSP, Jquery and fetched data via Ajax calls. New messages can be processed by submitting the form and new trade will be displayed in the table.
+
+### Security
+In order to use Spring Security I must add the necessary dependencies in the **pom.xml** file: 
+  
+  **<dependency>**
+    **<groupId>org.springframework.security</groupId>**
+    **<artifactId>spring-security-web</artifactId>**
+    **<version>3.2.10.CI-SNAPSHOT</version>**
+  **</dependency>**
+  **<dependency>**
+    **<groupId>org.springframework.security</groupId>**
+    **<artifactId>spring-security-config</artifactId>**
+    **<version>3.2.10.CI-SNAPSHOT</version>**
+  **</dependency>**
+
