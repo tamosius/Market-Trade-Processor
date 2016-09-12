@@ -13,15 +13,26 @@
 	<context:annotation-config />
     
     <!-- declaring base package to look for 'Controller' class -->
-	<context:component-scan base-package="com.tomas.marketTradeProcessor.controller" />
+	<context:component-scan base-package="com.tomas.controller" />
 	
-	<bean name="marketTradeController.html" class="com.tomas.marketTradeController" />
+	<!-- declare beans -->
+	<bean id="endPointMessage" class="com.tomas.service.EndPointMessage" />
+	<bean id="processData" class="com.tomas.dao.implementation.ProcessDataImplementation" />
+	<bean id="tradesStorage" class="com.tomas.tradesStorage.TradesStorage" />
     
     <!-- adding view resolver to show jsp's on browser -->
 	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	
+	<mvc:resources mapping="/resources/**" location="/resources/"
+		cache-period="31556926" />
+	
+	<!-- adds support for reading and writing JSON/XML if the Jackson/JAXB libraries are on the classpath -->	
+    <mvc:annotation-driven />
  
 </beans>
