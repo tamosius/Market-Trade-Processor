@@ -1,13 +1,15 @@
 package com.tomas.bean;
 
+import java.math.BigDecimal;
+
 public class Trade {
 
-	  private String userId;
+	  private int userId;
 	  private String currencyFrom;
 	  private String currencyTo;
-	  private double amountSell;
-	  private double amountBuy;
-	  private double rate;
+	  private BigDecimal amountSell; // Using BigDecimal for computations  the precision that it offers
+	  private BigDecimal amountBuy;  // (Money values often need this).
+	  private BigDecimal rate;
 	  private String timePlaced;
 	  private String originatingCountry;
 	  
@@ -17,10 +19,10 @@ public class Trade {
 	  }
 	
 	// setters and getters
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 	public String getCurrencyFrom() {
@@ -35,22 +37,22 @@ public class Trade {
 	public void setCurrencyTo(String currencyTo) {
 		this.currencyTo = currencyTo;
 	}
-	public double getAmountSell() {
+	public BigDecimal getAmountSell() {
 		return amountSell;
 	}
-	public void setAmountSell(double amountSell) {
+	public void setAmountSell(BigDecimal amountSell) {
 		this.amountSell = amountSell;
 	}
-	public double getAmountBuy() {
+	public BigDecimal getAmountBuy() {
 		return amountBuy;
 	}
-	public void setAmountBuy(double amountBuy) {
+	public void setAmountBuy(BigDecimal amountBuy) {
 		this.amountBuy = amountBuy;
 	}
-	public double getRate() {
+	public BigDecimal getRate() {
 		return rate;
 	}
-	public void setRate(double rate) {
+	public void setRate(BigDecimal rate) {
 		this.rate = rate;
 	}
 	public String getTimePlaced() {

@@ -7,14 +7,8 @@ import com.tomas.bean.Trade;
 
 public class TradesStorage {
 
-	// declare List to store Trades details
-	private static List<Trade> tradesList;
-	
-	// initialise the List with constructor
-	public TradesStorage(){
-		
-		tradesList = new ArrayList<>();
-	}
+	// declare List to store Trades object and details
+	private static List<Trade> tradesList = new ArrayList<>();
 	
 	// setters and getters
 	public void addTrade(Trade trade){
@@ -22,8 +16,8 @@ public class TradesStorage {
 		tradesList.add(trade);
 	}
 	
-	public List<Trade> getTradesList(){
+	public Trade getLastTrade(){
 		
-		return tradesList;
+		return tradesList.get(tradesList.size() - 1);
 	}
 }
